@@ -44,6 +44,18 @@ public class Assignment {
             System.out.println("Your score for this question: " + score2 + "/" + q2.totalMarks);
             System.out.println("--------------------");
 
+            // --- Question 3 ---
+            Question q3 = new Question("What is King Gizzard & the Lizard Wizard's 10th album?", 3, "Murder of the Universe");
+            maxScore += q3.totalMarks;
+
+            q3.AskQuestion(inputScanner);
+            int score3 = q3.CheckAnswer();
+            totalScore += score3;
+
+            System.out.println("Your score for this question: " + score3 + "/" + q3.totalMarks);
+            System.out.println("--------------------");
+
+            
             // Add more questions as needed...
 
         }  catch (NoSuchMethodError e) {

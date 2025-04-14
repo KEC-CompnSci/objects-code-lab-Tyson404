@@ -14,15 +14,14 @@ public class Question {
         this.studentAnswer = "";
     }
     public void AskQuestion(Scanner scanner){
-        System.out.println("Question: " + question + " (" + totalMarks + " marks)");
+        System.out.println("Question: " + this.question + " (" + totalMarks + " marks)");
         System.out.print("Your answer: ");
         studentAnswer = scanner.nextLine();
-        System.out.println(studentAnswer);
     }
 
     public int CheckAnswer(){
         if (studentAnswer.equals(answer)) {
-            return totalMarks;
+            return this.totalMarks;
         } else {
             return 0;
         }
